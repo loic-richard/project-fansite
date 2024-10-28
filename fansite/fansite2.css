@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+.image {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/imapatrick6.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+.image3 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/imagestade.jpg);
+    background-size: cover;
+}
+
+body {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+
+}
+
+
+
+
+.navbar {
+    box-shadow: 0px 10px 15px rgba(180, 0, 0, 0.5);
+    background-color: rgba(54, 54, 54, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    font-size: large
+}
+
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Sora', sans-serif;
+
+
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    color: #ffee00;
+}
+
+.navbar .nav-link ul {
+    display: flex;
+    font-weight: 900;
+
+}
+
+.navbar .nav-link ul li {
+    margin: 0 20px;
+
+
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+.nav-link li a {
+    color: #ffee00;
+    text-decoration: none;
+
+}
+
+
+/* Style du titre principal */
+header {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-family: 'POPPINS';
+    font-size: 40px;
+    color: #cb0000;
+}
+
+
+
+
+
+.accueil {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+
+
+}
+
+.accueil h1 {
+    color: #FFD700;
+}
+
+.actualite {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 90%;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.actualite1 p {
+    color: #ffffff;
+}
+
+.imageAndVideo {
+    margin-top: 6%;
+    padding: 5px;
+    display: flex;
+    gap: 50px;
+    height: 200px;
+
+}
+
+.image2 {
+
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+    height: 200px;
+}
+
+.video1 {
+    gap: 300px;
+    display: flex;
+}
+
+.video {
+    margin-top: 6%;
+    padding: 5px;
+    display: flex;
+    gap: 80px;
+    height: 200px;
+
+}
+
+.PhotosetVideo {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10%;
+    font-size: 20px;
+
+}
+
+.PhotosetVideo h2 {
+    color: #FFD700;
+}
+
+.realisations {
+    color: rgb(255, 225, 0);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+.realisations h3 {
+    color: #FFD700;
+}
+
+.realis {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+    height: 90%;
+    font-size: 20px;
+
+}
+
+.realis1 {
+    margin-top: 5%;
+    color: #FFD700;
+}
+
+.realis1 p {
+    color: #ffffff;
+}
+
+
+
+.epv {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.epv h4 {
+    color: #FFD700;
+}
+
+.ep {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+    height: 90%;
+    font-size: 18px;
+    font-size: 25px;
+}
+
+.ep1 {
+    margin: 5%;
+}
+
+.ep1 p {
+    color: #ffffff;
+}
+
+.reseaux {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20%;
+    font-size: xx-large;
+
+}
+
+.reseaux h4 {
+    color: #FFD700;
+}
+
+
+
+.social-page {
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    color: #ff0000;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20%;
+}
+
+/* Icônes de réseaux sociaux */
+.social-icons .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Couleurs des icônes */
+.instagram {
+    background-color: #C13584;
+}
+
+.twitter {
+    background-color: #ffffff;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.facebook {
+    background-color: #ffffff;
+}
+
+/* Style général pour le formulaire */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #E31837;
+    /* Rouge des Chiefs */
+    border: 2px solid #FFB81C;
+    /* Or des Chiefs */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #FFB81C;
+    /* Or */
+    margin-bottom: 15px;
+}
+
+/* Disposition horizontale */
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style pour le bouton */
+.contact-form button {
+    background-color: #FFB81C;
+    color: #E31837;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #E31837;
+    color: #FFB81C;
+}
+
+/* Style spécifique pour les champs de texte */
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row textarea:focus {
+    outline: none;
+    background-color: #FFF;
+    /* Fond blanc au focus */
+    color: #E31837;
+    /* Texte en rouge */
+}
+
+/* Conteneur de la vidéo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(8px);
+    /* Appliquer un flou à la vidéo */
+}
+
+.video-background video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Contenu de la page au-dessus de la vidéo */
+.content {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    /* Couleur blanche pour un bon contraste */
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Ombre pour améliorer la lisibilité */
+}
+
+.content h1 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    font-size: 1.5em;
+    color: #FFD700;
+    /* Couleur or pour une touche sportive */
+}
