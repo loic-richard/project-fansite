@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a73e8, #ff4081);
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+/* Menu de navigation */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Animation sur hover */
+.menu a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ff4081;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.civil {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.civil strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.civil form {
+    display: flex;
+    flex-direction: column;
+}
+
+.civil label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.civil input[type="text"],
+.civil input[type="email"],
+.civil select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.civil select {
+    width: 100%;
+}
+
+.civil .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.civil .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.civil input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.civil input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.civil input[type="text"]::placeholder,
+.civil input[type="email"]::placeholder {
+    color: #888;
+}
+
+.civil input[type="submit"]:active {
+    background-color: #388E3C;
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a73e8, #ff4081);
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+/* Menu de navigation */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+
+
+
+/* Animation sur hover */
+.menu a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ff4081;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Responsivité du menu */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+}
+
+/* Style pour les sections du site */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Style pour les titres */
+h1, h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Animation d'apparition */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Keyframes pour l'animation d'apparition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style pour le contenu de la page */
+p {
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #f0f0f0;
+}
+
+/* Style de base pour la section de réalisation */
+.realisation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour chaque catégorie */
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .realisation h2 {
+    grid-column: span 4; /* Le titre s'étend sur les 4 colonnes */
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .realisation h3 {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  /* Styles pour les listes des médailles */
+  .realisation ul {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0;
+  }
+  
+  .realisation ul li {
+    background-color: #e7f1ff; /* Couleur de fond pour les médailles */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    color: black;
+  }
+  
+  /* Flex pour les colonnes */
+  .realisation > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .realisation .JO,
+  .realisation .palmaresmonde,
+  .realisation .palmaresfrance,
+  .realisation .palmaresNCAA {
+    width: 100%;
+  }
+  
+  /* Responsive : sur les petits écrans, affichage en une seule colonne */
+  @media (max-width: 768px) {
+    .realisation {
+      grid-template-columns: 1fr; /* Passe en 1 colonne sur les petits écrans */
+    }
+  
+    .realisation h2 {
+      grid-column: span 1;
+    }
+  }
+  
+
+/* Effet de parallax */
+body {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.actu h3 {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}

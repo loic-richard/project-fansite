@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #fdfcfc);
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.img {
+    display: flex;
+    justify-content: space-around; /* Espace entre les items */
+    gap: 20px; /* Espace entre chaque item */
+}
+
+.item {
+    display: flex;
+    flex-direction: column; /* Aligne l'image et le titre en colonne */
+    align-items: center; /* Centre le contenu de chaque item */
+    width: 33%; /* Chaque item occupe un tiers de la largeur de .img */
+}
+
+.item img {
+    width: 100%; /* Image prend toute la largeur de l'item */
+    height: auto;
+}
+
+.item h3 {
+    margin-top: 10px; /* Espace entre l'image et le titre */
+    text-align: center;
+}
+
+
+
+.lien {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
